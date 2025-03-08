@@ -14,11 +14,10 @@ flask-sqlalchemy = "^3.1.1"
 flask-login = "^0.6.3"
 flask-gravatar = "^0.5.0"
 flask-ckeditor = "^1.0.0"
-flask-bootstrap = "^3.3.7.1"
 flask = "2.3.0"
-bootstrap-flask = "^2.4.1"
 bleach = "^6.2.0"
 flask-wtf = "^1.2.2"
+bootstrap-flask = "^2.4.1"
 
 
 [build-system]
