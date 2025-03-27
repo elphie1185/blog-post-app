@@ -1,30 +1,16 @@
+import json
+
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
 
 app = Flask(__name__)
 Bootstrap5(app)
 
-journals = [
-    {
-        "title": "Paris 2021",
-        "trip_description": "A trip to Paris",
-        "date": "2021-01-01",
-        "entries": [
-            {
-                "date": "2020-12-01",
-                "entry_text": "I went to Paris and it was amazing!"
-            }, 
-            {
-                "date": "2020-12-02",
-                "entry_text": "I went to the Eiffel Tower"
-            },
-            {
-                "date": "2020-12-03",
-                "entry_text": "I went to the Louvre"
-            }
-        ]
-    }
-]
+with open("data/holiday_journal.json") as f:
+    holiday_journals = json.load(f)
+
+with open("data/data_blog_posts.json") as f:
+    data_blogs = json.load(f)
 
 @app.route('/')
 def get_all_posts():
@@ -36,7 +22,11 @@ def about():
 
 @app.route('/journals')
 def get_holiday_journals():
-    return render_template("journals.html", journals=journals)
+    return render_template("journals.html", journals=holiday_journals)
+
+@app.route('/data_blogs')
+def get_data_blogs():
+    return render_template("data_blogs.html", blog_posts=data_blogs)
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
