@@ -1,0 +1,13 @@
+[
+    {
+        "title": "Combine text with numerical feature for categorisation",
+        "description": "The different method to use transformer model to combine text with numerical and categorical features to categorise text.",
+        "date": "2021-01-01",
+        "entries": [
+            {
+                "date": "2020-12-01",
+                "entry_text": "Blah Blah"
+            }
+        ]
+    }
+]

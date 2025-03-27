@@ -1,0 +1,21 @@
+[
+    {
+        "title": "Paris 2021",
+        "description": "A trip to Paris",
+        "date": "2021-01-01",
+        "entries": [
+            {
+                "date": "2020-12-01",
+                "entry_text": "I went to Paris and it was amazing!"
+            }, 
+            {
+                "date": "2020-12-02",
+                "entry_text": "I went to the Eiffel Tower"
+            },
+            {
+                "date": "2020-12-03",
+                "entry_text": "I went to the Louvre"
+            }
+        ]
+    }
+]
