@@ -5,5 +5,11 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "bootstrap-flask==2.4.2",
     "flask==3.1.0",
+    "flask-sqlalchemy==3.1.1",
+    "sqlalchemy==2.0.40",
 ]
+
+[tool.uv]
+package = true
